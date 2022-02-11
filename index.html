@@ -5,17 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Giridhar Resume</title>
+
+  
   <style>
           .attribution { font-size: 11px; text-align: center; }
           .attribution a { color: hsl(228, 45%, 44%); }
-                 
+                  @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Outfit", sans-serif;
+        }
+        html {
+          min-width: 375px;
+        }
+        body {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: hsl(212, 45%, 89%);
+          max-width: 360px;
+        }
+        .card {
+          background-color: white;
+          padding: 1em;
+          text-align: center;
+          border-radius: 15px;
+          box-shadow: 0em 1em 1em hsla(219, 15%, 55%, 0.241);
+        }
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+        h2 {
+          color: hsl(218, 44%, 22%);
+          font-weight: 700;
+          padding: 0.5em 0em;
+        }
+        p {
+          color: hsl(220, 15%, 55%);
+          font-weight: 400;
+          padding: 0.5em 1em;
+        }
+        .attribution {
+          margin-top: 5em;
+        }
+        
+        
+        #main-footer p a {
+            padding-bottom: 40px;
+            font-size: 25px;
+            text-decoration: none;
+          
+        }
+        
+        #main-footer p {
+            text-align: center; 
+        }
+        
+        .social-links {
+            list-style:none;
+            margin:0;
+            padding:0;
+            margin-bottom:30px;
+
+        }
+        
+        .social-links li{
+            display:inline-block;
+            margin:0 5px;
+            border-radius:3px;
+            box-shadow:0 4px 0 transparent;
+            -webkit-transition:all .3s ease-out;
+            transition:all .3s ease-out;
+        }
+        
+        .social-links li a {
+            display:block;
+            color:#fff;
+            font-size:21px;
+            width:50px;
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            background:#00B4DB;
+            border-radius:50%;
+            -webkit-transition:all .3s ease-out;
+            transition:all .3s ease-out;
+        }
+        
+        .social-links li a:hover {
+            color:#fff;
+            background:#0083B0;
+        }
 
   </style>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
  <main>
@@ -25,19 +119,51 @@
     
           <img src="images/image-qr-code.png" alt="" />
       
-          <h1>Improve your front-end skills by building projects</h1>
+          <h2>Pulichara Giridhar</h2>
           <p>
-            Scan the QR code to visit Frontend Mentor and take your coding skills to
-            the next level
+            Scan the QR code to See and Download Giridhar Resume
           </p>
      </div>
   </div>
   </main>
   <br>
-  <footer class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Giridhar</a>.
+  <footer id="main-footer" class="add-padding border-top-color2">
+		
+    <div class="container">
+
+      <p><a href="https://github.com/giridhar0025" target="_blank">Visit My GitHub Profile</a></p><br>
+    
+      <ul class="social-links">
+        <li>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwRrdBDNkRHHtZqGcNQTWwjMcNTDhSVKCpfSTFlhBLGccLkZJTZwtCQGVfJGWTlWXRnvlCR" target="_blank">
+            <i class="fa-solid fa-at"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.freecodecamp.org/fcc459c9241-91d9-4ffa-9e6e-a6908a945bf2" target="_blank">
+            <i class="fa-brands fa-free-code-camp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_giridhar__/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+       
+      </ul>
+    
+    </div>
+    
   </footer>
+
+  <script>
+
+  </script>
  
 </body>
 </html>
